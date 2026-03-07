@@ -134,7 +134,7 @@ const Services = () => {
                         if (window.DIKIDI && window.DIKIDI.openWidget) {
                           window.DIKIDI.openWidget(widgetId);
                         } else {
-                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
                         }
                       }}
                     >
@@ -208,7 +208,7 @@ const Services = () => {
                         if (window.DIKIDI && window.DIKIDI.openWidget) {
                           window.DIKIDI.openWidget(widgetId);
                         } else {
-                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
                         }
                       }}
                     >
@@ -289,7 +289,7 @@ const Services = () => {
                         if (window.DIKIDI && window.DIKIDI.openWidget) {
                           window.DIKIDI.openWidget(widgetId);
                         } else {
-                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
                         }
                       }}
                     >
