@@ -52,15 +52,8 @@ const Masters = () => {
         </div>
       )}
 
-      {/* Error State */}
-      {error && (
-        <div className="py-20 text-center">
-          <p className="text-red-500">{language === 'ru' ? 'Ошибка загрузки данных' : 'Error loading data'}</p>
-        </div>
-      )}
-
       {/* Masters Grid */}
-      {!loading && !error && (
+      {!loading && (
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
