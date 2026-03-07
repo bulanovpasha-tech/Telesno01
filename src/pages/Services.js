@@ -131,11 +131,11 @@ const Services = () => {
                       className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
                       onClick={() => {
                         const widgetId = classicMassage.find(s => s.duration === classicDuration)?.dikidiWidget || '205592';
-                        if (window.DIKIDI && window.DIKIDI.openWidget) {
-                          window.DIKIDI.openWidget(widgetId);
-                        } else {
-                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
-                        }
+                        const a = document.createElement('a');
+                        a.href = `https://dikidi.net/#widget=${widgetId}`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
                       }}
                     >
                       {t.services.book}
@@ -205,11 +205,11 @@ const Services = () => {
                       className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
                       onClick={() => {
                         const widgetId = relaxingMassage.find(s => s.duration === relaxingDuration)?.dikidiWidget || '205592';
-                        if (window.DIKIDI && window.DIKIDI.openWidget) {
-                          window.DIKIDI.openWidget(widgetId);
-                        } else {
-                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
-                        }
+                        const a = document.createElement('a');
+                        a.href = `https://dikidi.net/#widget=${widgetId}`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
                       }}
                     >
                       {t.services.book}
@@ -286,11 +286,11 @@ const Services = () => {
                       className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
                       onClick={() => {
                         const widgetId = service.dikidiWidget || '205592';
-                        if (window.DIKIDI && window.DIKIDI.openWidget) {
-                          window.DIKIDI.openWidget(widgetId);
-                        } else {
-                          window.open(`https://dikidi.net/#widget=${widgetId}`, '_blank');
-                        }
+                        const a = document.createElement('a');
+                        a.href = `https://dikidi.net/#widget=${widgetId}`;
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
                       }}
                     >
                       {t.services.book}
