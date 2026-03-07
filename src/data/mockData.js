@@ -21,7 +21,6 @@ export const services = [
     price: 2700,
     category: 'classic',
     dikidiWidget: '205594',
-    dikidiWidget: '205594',
     image: 'https://customer-assets.emergentagent.com/job_9da52546-8069-4452-96ab-36a538719de1/artifacts/jmbysf4d_%D0%A4%D0%BE%D1%82%D0%BE01.jpg'
   },
   {
@@ -34,7 +33,6 @@ export const services = [
     price: 2000,
     category: 'relaxing',
     dikidiWidget: '205595',
-    dikidiWidget: '205595',
     image: 'https://customer-assets.emergentagent.com/job_9da52546-8069-4452-96ab-36a538719de1/artifacts/zl2je0hz_%D0%A4%D0%BE%D1%82%D0%BE02.jpg'
   },
   {
@@ -46,7 +44,6 @@ export const services = [
     duration: 90,
     price: 2500,
     category: 'relaxing',
-    dikidiWidget: '205596',
     dikidiWidget: '205596',
     image: 'https://customer-assets.emergentagent.com/job_9da52546-8069-4452-96ab-36a538719de1/artifacts/zl2je0hz_%D0%A4%D0%BE%D1%82%D0%BE02.jpg'
   },
@@ -284,7 +281,7 @@ export const masters = [
     bioIntroRu: 'В работе сочетает:',
     bioIntroEn: 'Combines in practice:',
     image: 'https://customer-assets.emergentagent.com/job_9da52546-8069-4452-96ab-36a538719de1/artifacts/9ib6h8ej_%D0%9D%D0%B0%D1%82%D0%B0%D0%BB%D1%8C%D1%8F.jpg',
-    dikidiWidget: '205600'
+    dikidiWidget: '205594'
   },
   {
     id: 'master-2',
@@ -305,7 +302,7 @@ export const masters = [
     bioIntroRu: 'В своей практике сочетает:',
     bioIntroEn: 'Combines in practice:',
     image: 'https://customer-assets.emergentagent.com/job_9da52546-8069-4452-96ab-36a538719de1/artifacts/u3c5l9x0_%D0%90%D0%BB%D0%B5%D0%BD%D0%B0.jpg',
-    dikidiWidget: '205601'
+    dikidiWidget: '205594'
   }
 ];
 
