@@ -285,18 +285,18 @@ export const masters = [
   },
   {
     id: 'master-2',
-    nameRu: 'Алёна',
-    nameEn: 'Alyona',
+    nameRu: 'Милана',
+    nameEn: 'Milana',
     specializationRu: '',
     specializationEn: '',
     bioRu: null,
     bioEn: null,
     bioDetailsRu: [
-      'Нежность и плавность — помогает вам отпустить тревоги и погрузиться в состояние покоя. Работает с беременными и детьми от 7 лет.',
+      'Нежность и плавность — помогает вам отпустить тревоги и погрузиться в состояние покоя.',
       'Силу и точность — прорабатывает каждую напряжённую зону, возвращая телу лёгкость.'
     ],
     bioDetailsEn: [
-      'Gentleness and fluidity — helps you let go of anxiety and immerse in a state of calm. Works with pregnant women and children from 7 years.',
+      'Gentleness and fluidity — helps you let go of anxiety and immerse in a state of calm.',
       'Strength and precision — works through every tense area, restoring lightness to the body.'
     ],
     bioIntroRu: 'В своей практике сочетает:',
