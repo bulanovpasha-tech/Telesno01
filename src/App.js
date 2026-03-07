@@ -26,26 +26,11 @@ function ScrollToTop() {
   return null;
 }
 
-// Load DIKIDI widget script dynamically
-function DikidiScript() {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://dikidi.net/assets/js/widget_record/widget2.min.js?v=1758698230';
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-  return null;
-}
-
 function App() {
   return (
     <LanguageProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <DikidiScript />
         <div className="App">
           <Header />
           <Routes>
