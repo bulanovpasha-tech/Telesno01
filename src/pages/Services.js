@@ -127,11 +127,19 @@ const Services = () => {
                   </div>
 
                   <div className="space-y-3 mt-auto">
-                    <a href={`https://dikidi.net/#widget=${classicMassage.find(s => s.duration === classicDuration)?.dikidiWidget || '205592'}`} className="block w-full">
-                      <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors">
-                        {t.services.book}
-                      </Button>
-                    </a>
+                    <Button 
+                      className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
+                      onClick={() => {
+                        const widgetId = classicMassage.find(s => s.duration === classicDuration)?.dikidiWidget || '205592';
+                        if (window.DIKIDI && window.DIKIDI.openWidget) {
+                          window.DIKIDI.openWidget(widgetId);
+                        } else {
+                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                        }
+                      }}
+                    >
+                      {t.services.book}
+                    </Button>
                     <div className="grid grid-cols-2 gap-3">
                       <div
                         onClick={() => handleCertificateClick('classic', classicDuration)}
@@ -193,11 +201,19 @@ const Services = () => {
                   </div>
 
                   <div className="space-y-3 mt-auto">
-                    <a href={`https://dikidi.net/#widget=${relaxingMassage.find(s => s.duration === relaxingDuration)?.dikidiWidget || '205592'}`} className="block w-full">
-                      <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors">
-                        {t.services.book}
-                      </Button>
-                    </a>
+                    <Button 
+                      className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
+                      onClick={() => {
+                        const widgetId = relaxingMassage.find(s => s.duration === relaxingDuration)?.dikidiWidget || '205592';
+                        if (window.DIKIDI && window.DIKIDI.openWidget) {
+                          window.DIKIDI.openWidget(widgetId);
+                        } else {
+                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                        }
+                      }}
+                    >
+                      {t.services.book}
+                    </Button>
                     <div className="grid grid-cols-2 gap-3">
                       <div
                         onClick={() => handleCertificateClick('relaxing', relaxingDuration)}
@@ -266,11 +282,19 @@ const Services = () => {
                   </div>
 
                   <div className="space-y-3 mt-auto">
-                    <a href={`https://dikidi.net/#widget=${service.dikidiWidget || '205592'}`} className="block">
-                      <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors">
-                        {t.services.book}
-                      </Button>
-                    </a>
+                    <Button 
+                      className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
+                      onClick={() => {
+                        const widgetId = service.dikidiWidget || '205592';
+                        if (window.DIKIDI && window.DIKIDI.openWidget) {
+                          window.DIKIDI.openWidget(widgetId);
+                        } else {
+                          window.open(`https://dikidi.net/ru/online/${widgetId}/`, '_blank');
+                        }
+                      }}
+                    >
+                      {t.services.book}
+                    </Button>
                     <div
                       onClick={() => handleCertificateClick(service.category, service.duration)}
                       className="block w-full cursor-pointer"
