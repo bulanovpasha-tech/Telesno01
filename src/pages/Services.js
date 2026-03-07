@@ -127,12 +127,11 @@ const Services = () => {
                   </div>
 
                   <div className="space-y-3 mt-auto">
-                    <Button 
-                      className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
-                      onClick={() => window.open(`https://dikidi.net/#widget=${classicMassage.find(s => s.duration === classicDuration)?.dikidiWidget || '205592'}`, '_blank')}
-                    >
-                      {t.services.book}
-                    </Button>
+                    <a href={`https://dikidi.net/#widget=${classicMassage.find(s => s.duration === classicDuration)?.dikidiWidget || '205592'}`} className="block w-full">
+                      <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors">
+                        {t.services.book}
+                      </Button>
+                    </a>
                     <div className="grid grid-cols-2 gap-3">
                       <div
                         onClick={() => handleCertificateClick('classic', classicDuration)}
@@ -194,12 +193,11 @@ const Services = () => {
                   </div>
 
                   <div className="space-y-3 mt-auto">
-                    <Button 
-                      className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors"
-                      onClick={() => window.open(`https://dikidi.net/#widget=${relaxingMassage.find(s => s.duration === relaxingDuration)?.dikidiWidget || '205592'}`, '_blank')}
-                    >
-                      {t.services.book}
-                    </Button>
+                    <a href={`https://dikidi.net/#widget=${relaxingMassage.find(s => s.duration === relaxingDuration)?.dikidiWidget || '205592'}`} className="block w-full">
+                      <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors">
+                        {t.services.book}
+                      </Button>
+                    </a>
                     <div className="grid grid-cols-2 gap-3">
                       <div
                         onClick={() => handleCertificateClick('relaxing', relaxingDuration)}
