@@ -13,6 +13,14 @@ const Home = () => {
   // State for settings
   const [bookingUrl, setBookingUrl] = useState('https://dikidi.net/#widget=205592');
 
+  const openDikidi = (url) => {
+    const a = document.createElement('a');
+    a.href = url;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   // Fetch settings from API
   useEffect(() => {
     const fetchSettings = async () => {
@@ -50,11 +58,11 @@ const Home = () => {
             {t.hero.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+            <span onClick={() => openDikidi(bookingUrl)} style={{cursor:"pointer"}}>
               <Button className="bg-[#C6A75E] text-[#0F2A24] hover:bg-[#C6A75E]/90 px-8 py-6 text-lg">
                 {t.hero.bookButton}
               </Button>
-            </a>
+            </span>
             <Link to="/services">
               <Button variant="outline" className="border-[#C6A75E] text-[#C6A75E] hover:bg-[#C6A75E] hover:text-[#0F2A24] px-8 py-6 text-lg">
                 {t.hero.servicesButton}
@@ -168,11 +176,11 @@ const Home = () => {
           <h2 className="text-5xl md:text-6xl font-serif text-[#0F2A24] mb-12">
             {t.home.ctaTitle}
           </h2>
-          <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
+          <span onClick={() => openDikidi(bookingUrl)} style={{cursor:"pointer"}}>
             <Button className="bg-[#0F2A24] text-white hover:bg-[#0F2A24]/90 px-12 py-6 text-lg">
               {t.home.ctaButton}
             </Button>
-          </a>
+          </span>
         </div>
       </section>
     </div>
