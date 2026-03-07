@@ -104,8 +104,9 @@ const Masters = () => {
                     </p>
                   )}
 
-                  <a href={`https://dikidi.net/#widget=${master.dikidiWidget || '205592'}`} className="block mt-auto">
+                  <a href="https://t.me/telesno_vlg" target="_blank" rel="noopener noreferrer" className="block mt-auto">
                     <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors" data-testid={`book-master-${master.id}`}>
+                      <Send className="w-4 h-4 mr-2" />
                       {t.masters.book}
                     </Button>
                   </a>
