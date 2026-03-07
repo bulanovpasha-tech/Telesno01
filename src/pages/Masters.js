@@ -104,11 +104,19 @@ const Masters = () => {
                     </p>
                   )}
 
-                  <a href={`https://dikidi.net/#widget=${master.dikidiWidget || '205592'}`} className="block mt-auto">
-                    <Button className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors" data-testid={`book-master-${master.id}`}>
-                      {t.masters.book}
-                    </Button>
-                  </a>
+                  <Button
+                    className="w-full bg-[#0F2A24] text-white hover:bg-[#C6A75E] hover:text-[#0F2A24] transition-colors mt-auto"
+                    data-testid={`book-master-${master.id}`}
+                    onClick={() => {
+                      const a = document.createElement('a');
+                      a.href = `https://dikidi.net/#widget=${master.dikidiWidget}`;
+                      document.body.appendChild(a);
+                      a.click();
+                      document.body.removeChild(a);
+                    }}
+                  >
+                    {t.masters.book}
+                  </Button>
                 </CardContent>
               </Card>
             ))}
