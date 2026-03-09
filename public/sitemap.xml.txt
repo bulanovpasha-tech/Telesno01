@@ -1,0 +1,34 @@
+xml version=1.0 encoding=UTF-8
+urlset xmlns=httpwww.sitemaps.orgschemassitemap0.9
+
+url
+lochttpstlsno.ruloc
+priority1.0priority
+url
+
+url
+lochttpstlsno.ruservicesloc
+priority0.9priority
+url
+
+url
+lochttpstlsno.rumastersloc
+priority0.8priority
+url
+
+url
+lochttpstlsno.rucertificatesloc
+priority0.9priority
+url
+
+url
+lochttpstlsno.rusubscriptionsloc
+priority0.8priority
+url
+
+url
+lochttpstlsno.ruaboutloc
+priority0.7priority
+url
+
+urlset
