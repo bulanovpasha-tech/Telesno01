@@ -10,6 +10,7 @@ import Masters from "./pages/Masters";
 import Subscriptions from "./pages/Subscriptions";
 import Certificates from "./pages/Certificates";
 import About from "./pages/About";
+import Requisites from "./pages/Requisites";
 
 // Component to scroll to top on route change
 function ScrollToTop() {
@@ -40,6 +41,7 @@ function App() {
             <Route path="/subscriptions" element={<Subscriptions />} />
             <Route path="/certificates" element={<Certificates />} />
             <Route path="/about" element={<About />} />
+            <Route path="/rekvizity" element={<Requisites />} />
           </Routes>
           <Footer />
         </div>
