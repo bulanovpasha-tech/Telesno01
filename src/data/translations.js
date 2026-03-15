@@ -113,7 +113,9 @@ export const translations = {
       address: 'ул. Рабоче-Крестьянская, д.35',
       phone: '+7 (996) 483-55-56',
       schedule: '10:00 — 20:00 ежедневно',
-      rights: '© ТЕЛЕСНО, Волгоград'
+      rights: '© ТЕЛЕСНО, Волгоград',
+      inn: 'Самозанятый · ИНН 344810153006',
+      requisitesLink: 'Реквизиты'
     }
   },
   en: {
@@ -230,7 +232,9 @@ export const translations = {
       address: 'Raboche-Krestyanskaya St., 35',
       phone: '+7 (996) 483-55-56',
       schedule: '10:00 — 20:00 daily',
-      rights: '© TELESNO, Volgograd'
+      rights: '© TELESNO, Volgograd',
+      inn: 'Self-employed · TIN 344810153006',
+      requisitesLink: 'Legal Info'
     }
   }
 };
