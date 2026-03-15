@@ -130,6 +130,13 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#C6A75E]/10 text-center">
           <p className="text-sm text-white/60">{t.footer.rights}</p>
+          <p className="text-xs text-white/40 mt-1">{t.footer.inn}</p>
+          <Link
+            to="/rekvizity"
+            className="text-xs text-white/30 hover:text-[#C6A75E]/60 transition-colors mt-1 inline-block"
+          >
+            {t.footer.requisitesLink}
+          </Link>
         </div>
       </div>
     </footer>
