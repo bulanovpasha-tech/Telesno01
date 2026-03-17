@@ -12,7 +12,7 @@ const Privacy = () => {
             {language === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy'}
           </h1>
           <p className="text-white/60 text-sm">
-            {language === 'ru' ? 'Редакция от 01.03.2025' : 'Edition dated 01.03.2025'}
+            {language === 'ru' ? 'Редакция от 18.03.2026' : 'Edition dated 18.03.2026'}
           </p>
         </div>
       </section>
