@@ -39,6 +39,12 @@ const Footer = () => {
     }
   ];
 
+  const legalLinks = [
+    { path: '/privacy', label: language === 'ru' ? 'Политика конфиденциальности' : 'Privacy Policy' },
+    { path: '/oferta', label: language === 'ru' ? 'Договор публичной оферты' : 'Public Offer Agreement' },
+    { path: '/certificates-terms', label: language === 'ru' ? 'Положение о сертификатах и абонементах' : 'Certificates & Subscriptions Terms' },
+  ];
+
   return (
     <footer className="bg-[#0F2A24] text-white/80 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,13 +136,20 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[#C6A75E]/10 text-center">
           <p className="text-sm text-white/60">{t.footer.rights}</p>
-          <p className="text-xs text-white/40 mt-1">{t.footer.inn}</p>
-          <Link
-            to="/rekvizity"
-            className="text-xs text-white/30 hover:text-[#C6A75E]/60 transition-colors mt-1 inline-block"
-          >
-            {t.footer.requisitesLink}
-          </Link>
+          
+          {/* Legal Links */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-3">
+            {legalLinks.map(link => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="text-xs text-white/40 hover:text-[#C6A75E]/70 transition-colors"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
